@@ -2,11 +2,18 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
+import VueRouter from "vue-router"
 import { AlertPlugin, ToastPlugin } from 'vux'
 import iView from 'iview';
-import 'iview/dist/styles/iview.css';
-import vuei18n from "vue-i18n";
-import axios from "axios";
+import 'iview/dist/styles/iview.css'
+import vuei18n from "vue-i18n"
+import axios from "axios"
+
+import router from "./components/router/index.js"
+
+
+
+Vue.use(VueRouter);
 
 
 Vue.prototype.$http = axios
@@ -25,5 +32,6 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   components: { App },
-  template: '<App/>'
+  template: '<App/>',
+  router
 })
