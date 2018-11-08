@@ -24,6 +24,8 @@
         </swiper-item>
       </swiper>-->
 
+      <!--TODO 改造vux-->
+
       <nav class="mui-bar mui-bar-tab">
         <a class="mui-tab-item mui-active" href="#tabbar">
           <span class="mui-icon mui-icon-home"></span>
