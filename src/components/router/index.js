@@ -3,11 +3,20 @@ import VueRouter from "vue-router";
 
 import Home from "@/components/home/Home"
 import Movie from "@/components/movie/movie"
-
+import Title from "@/components/Title"
 
 const routes = [
-  {path:"/home",component:Home},
-  {path:"/movie",component:Movie}
+  {path:"/",redirect:'title'},
+  {
+    path:"/title",
+    component:Title,
+    children:[
+      {path:"home",component:Home},
+      {path:"movie",component:Movie}
+    ]
+  },
+
+
 ]
 
 

@@ -1,19 +1,14 @@
 <template>
   <div>
       <x-header  title="title"></x-header>
-    <Title></Title>
-
-
+      <router-view></router-view>
   </div>
 </template>
 
 <script>
-import  Title from "./components/Title"
 import { XHeader } from 'vux'
-
   export default{
     components:{
-        Title,
         XHeader
       }
     }

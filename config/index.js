@@ -11,7 +11,15 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     //可以在这里配置代理，应该是使用代理来解决跨域访问的问题，然后可以通过代理/api配置对应的后端的路径，然后可以通过代理来访问到后端的项目
-    proxyTable: {},
+    proxyTable: {
+      '/api':{
+        target:'http://api.douban.com/v2',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/api': ''
+        }
+      }
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST

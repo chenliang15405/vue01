@@ -1,12 +1,10 @@
 <template>
 
   <div class="movie">
-      This is movie
-      <div class="imgage">
-         <img src=""/>
-         <p class="title"></p>
-         <p class="description"></p>
+      <div class="hot-movie">
+          热门电影
       </div>
+      <div></div>
 
   </div>
 
@@ -20,15 +18,15 @@
               movieList:[]
           }
         },
-        created(){
+        mounted(){
           this.getMovieList()
         },
         methods:{
             getMovieList(){
-                  //TODO 使用axios中的json请求对应的数据，安装jsonp模块
-                  // this.$http.jsonP("http://api.douban.com/v2/movie/top250").then(result => {
-                  //       console.log(result)
-                  // })
+                  //在index.js中配置了对应的proxy，将/api 进行代理 并打开跨域，如果是npm run build的时候，在生产环境，则不能够访问，需要配置代理，可以使用nginx代理或者配置jsonp模块
+                  this.axios.get("/api/movie/top250").then(result => {
+                        console.log(result)
+                  })
             }
         }
     }
