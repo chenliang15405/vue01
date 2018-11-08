@@ -5,14 +5,15 @@
     </div>
     <div class="function">
 
-      <tab :line-width=2 active-color='#fc378c' v-model="index">
+      <!--<tab :line-width=2 active-color='#fc378c' v-model="index">
           <tab-item class="vux-center" :selected="menu == index" v-for="(item, index) in list2"  :key="index">
-              <!--<a @click.prevent="showView(index)">{{item}}</a>-->
-            <router-link v-if="index == 0" to="/title/home">{{item}}</router-link>
+              &lt;!&ndash;<a @click.prevent="showView(index)">{{item}}</a>&ndash;&gt;
+            &lt;!&ndash;<router-link v-if="index == 0" to="/title/home">{{item}}</router-link>
             <router-link v-if="index == 1" to="/title/food">{{item}}</router-link>
             <router-link v-if="index == 2" to="/title/movie">{{item}}</router-link>
             <router-link v-if="index == 3" to="/title/bill">{{item}}</router-link>
-            <router-link v-if="index == 4" to="/title/person">{{item}}</router-link>
+            <router-link v-if="index == 4" to="/title/person">{{item}}</router-link>&ndash;&gt;
+            <a @click="toPage(index)">{{item}}</a>
           </tab-item>
       </tab>
       <swiper  v-model="index"  :show-dots="false">
@@ -21,7 +22,26 @@
               <router-view></router-view>
           </div>
         </swiper-item>
-      </swiper>
+      </swiper>-->
+
+      <nav class="mui-bar mui-bar-tab">
+        <a class="mui-tab-item mui-active" href="#tabbar">
+          <span class="mui-icon mui-icon-home"></span>
+          <span class="mui-tab-label">首页</span>
+        </a>
+        <a class="mui-tab-item" href="#tabbar-with-chat">
+          <span class="mui-icon mui-icon-email"><span class="mui-badge">9</span></span>
+          <span class="mui-tab-label">消息</span>
+        </a>
+        <a class="mui-tab-item" href="#tabbar-with-contact">
+          <span class="mui-icon mui-icon-contact"></span>
+          <span class="mui-tab-label">通讯录</span>
+        </a>
+        <a class="mui-tab-item" href="#tabbar-with-map">
+          <span class="mui-icon mui-icon-gear"></span>
+          <span class="mui-tab-label">设置</span>
+        </a>
+      </nav>
 
     </div>
   </div>
@@ -53,6 +73,20 @@
       }
   },
     methods:{
+      /*toPage(index){
+        //根据不同的index，跳转不同的路由
+         if(index == 0){
+           this.$router.push("/title/home")
+         }else if (index == 1){
+           this.$router.push("/title/food")
+         }else if (index == 2){
+           this.$router.push("/title/movie")
+         }else if (index == 3){
+           this.$router.push("/title/bill")
+         }else if (index == 4){
+           this.$router.push("/title/person")
+         }
+      }*/
     }
   }
 </script>
@@ -61,7 +95,7 @@
     重新定义style覆盖掉vux中组件的默认的行内style， !important 是提高优先级
    */
   .vux-swiper{
-    height: 400px!important;
+    height: 1000px!important;
   }
 
 </style>
@@ -85,24 +119,18 @@
     width: 82px;
   }
   .title{
-    border: 1px solid red;
     width: 100%;
-    height:150px;
+    height: 620px;
     padding: 0px;
+    overflow: hidden;
   }
   .lunbo{
     border: 1px solid blue;
-    width: 100%;
-    height:100%;
+    height: 150px;
 
   }
   .function{
-    height: 30px;
     width: 100%;
-  }
-
-  .vux-slider{
-    overflow: visible;
   }
 
   .tab-swiper {

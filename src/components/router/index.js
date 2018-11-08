@@ -6,7 +6,7 @@ import Movie from "@/components/movie/movie"
 import Title from "@/components/Title"
 
 const routes = [
-  {path:"/",redirect:'title'},
+  {path:"/",redirect:'/title/home'},
   {
     path:"/title",
     component:Title,

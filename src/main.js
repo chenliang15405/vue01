@@ -9,6 +9,7 @@ import 'iview/dist/styles/iview.css'
 import vuei18n from "vue-i18n"
 import axios from "axios"
 import Qs from 'qs'
+import "@/assets/mui/css/mui.css"
 
 import router from "./components/router/index.js"
 
