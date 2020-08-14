@@ -1,0 +1,992 @@
+2019/01/28-13:45 [restartedMain] INFO  com.miniplay.miniplay.MiniPlayEurekaCityApplication- The following profiles are active: dev
+2019/01/28-13:45 [restartedMain] INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext- Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@19ab5a8: startup date [Mon Jan 28 13:45:17 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@45f96bc6
+2019/01/28-13:45 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Multiple Spring Data modules found, entering strict repository configuration mode!
+2019/01/28-13:45 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Multiple Spring Data modules found, entering strict repository configuration mode!
+2019/01/28-13:45 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport- Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.miniplay.miniplay.dao.ProvinceDao.
+2019/01/28-13:45 [restartedMain] INFO  org.springframework.cloud.context.scope.GenericScope- BeanFactory id=37755b14-8f43-38a4-af9a-98f9e5196029
+2019/01/28-13:45 [restartedMain] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor- JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019/01/28-13:45 [restartedMain] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f7db80dd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019/01/28-13:45 [restartedMain] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'redisConfiguration' of type [com.miniplay.miniplay.configuration.RedisConfiguration$$EnhancerBySpringCGLIB$$3f5cf482] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019/01/28-13:45 [restartedMain] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$13f583da] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019/01/28-13:45 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8081 (http)
+2019/01/28-13:45 [restartedMain] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2019/01/28-13:45 [restartedMain] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.34
+2019/01/28-13:45 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/alan.chen/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019/01/28-13:45 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+2019/01/28-13:45 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 3074 ms
+2019/01/28-13:45 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean- Servlet statViewServlet mapped to [/druid/*]
+2019/01/28-13:45 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean- Servlet dispatcherServlet mapped to [/]
+2019/01/28-13:45 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'characterEncodingFilter' to: [/*]
+2019/01/28-13:45 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019/01/28-13:45 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019/01/28-13:45 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'requestContextFilter' to: [/*]
+2019/01/28-13:45 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'webStatFilter' to urls: [/*]
+2019/01/28-13:45 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource- {dataSource-1} inited
+2019/01/28-13:45 [Druid-ConnectionPool-Create-1343459127] ERROR com.alibaba.druid.pool.DruidDataSource- create connection SQLException, url: jdbc:mysql://localhost:3306/miniplay, errorCode 0, state 08S01
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_171]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_171]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2197) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:778) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_171]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_171]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468) ~[druid-1.1.10.jar:1.1.10]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_171]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_171]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_171]
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	... 15 common frames omitted
+2019/01/28-13:45 [Druid-ConnectionPool-Create-1343459127] ERROR com.alibaba.druid.pool.DruidDataSource- create connection SQLException, url: jdbc:mysql://localhost:3306/miniplay, errorCode 0, state 08S01
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_171]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_171]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2197) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:778) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_171]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_171]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468) ~[druid-1.1.10.jar:1.1.10]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_171]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_171]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_171]
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	... 15 common frames omitted
+2019/01/28-13:45 [Druid-ConnectionPool-Create-1343459127] ERROR com.alibaba.druid.pool.DruidDataSource- create connection SQLException, url: jdbc:mysql://localhost:3306/miniplay, errorCode 0, state 08S01
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_171]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_171]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2197) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:778) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_171]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_171]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468) ~[druid-1.1.10.jar:1.1.10]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_171]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_171]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_171]
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	... 15 common frames omitted
+2019/01/28-13:45 [Druid-ConnectionPool-Create-1343459127] ERROR com.alibaba.druid.pool.DruidDataSource- create connection SQLException, url: jdbc:mysql://localhost:3306/miniplay, errorCode 0, state 08S01
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_171]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_171]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2197) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:778) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_171]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_171]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468) ~[druid-1.1.10.jar:1.1.10]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_171]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_171]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_171]
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	... 15 common frames omitted
+2019/01/28-13:45 [Druid-ConnectionPool-Create-1343459127] ERROR com.alibaba.druid.pool.DruidDataSource- create connection SQLException, url: jdbc:mysql://localhost:3306/miniplay, errorCode 0, state 08S01
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_171]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_171]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2197) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:778) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_171]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_171]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468) ~[druid-1.1.10.jar:1.1.10]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_171]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_171]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_171]
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	... 15 common frames omitted
+2019/01/28-13:45 [Druid-ConnectionPool-Create-1343459127] ERROR com.alibaba.druid.pool.DruidDataSource- create connection SQLException, url: jdbc:mysql://localhost:3306/miniplay, errorCode 0, state 08S01
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_171]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_171]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2197) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:778) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_171]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_171]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468) ~[druid-1.1.10.jar:1.1.10]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_171]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_171]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_171]
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	... 15 common frames omitted
+2019/01/28-13:45 [Druid-ConnectionPool-Create-1343459127] ERROR com.alibaba.druid.pool.DruidDataSource- create connection SQLException, url: jdbc:mysql://localhost:3306/miniplay, errorCode 0, state 08S01
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_171]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_171]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2197) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:778) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_171]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_171]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468) ~[druid-1.1.10.jar:1.1.10]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_171]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_171]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_171]
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	... 15 common frames omitted
+2019/01/28-13:45 [Druid-ConnectionPool-Create-1343459127] ERROR com.alibaba.druid.pool.DruidDataSource- create connection SQLException, url: jdbc:mysql://localhost:3306/miniplay, errorCode 0, state 08S01
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_171]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_171]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2197) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:778) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_171]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_171]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468) ~[druid-1.1.10.jar:1.1.10]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_171]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_171]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_171]
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	... 15 common frames omitted
+2019/01/28-13:45 [Druid-ConnectionPool-Create-1343459127] ERROR com.alibaba.druid.pool.DruidDataSource- create connection SQLException, url: jdbc:mysql://localhost:3306/miniplay, errorCode 0, state 08S01
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_171]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_171]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2197) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:778) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_171]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_171]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468) ~[druid-1.1.10.jar:1.1.10]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_171]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_171]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_171]
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	... 15 common frames omitted
+2019/01/28-13:45 [Druid-ConnectionPool-Create-1343459127] ERROR com.alibaba.druid.pool.DruidDataSource- create connection SQLException, url: jdbc:mysql://localhost:3306/miniplay, errorCode 0, state 08S01
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_171]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_171]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2197) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:778) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_171]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_171]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468) ~[druid-1.1.10.jar:1.1.10]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_171]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_171]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_171]
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	... 15 common frames omitted
+2019/01/28-13:45 [Druid-ConnectionPool-Create-1343459127] ERROR com.alibaba.druid.pool.DruidDataSource- create connection SQLException, url: jdbc:mysql://localhost:3306/miniplay, errorCode 0, state 08S01
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_171]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_171]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2197) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:778) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_171]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_171]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468) ~[druid-1.1.10.jar:1.1.10]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_171]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_171]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_171]
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	... 15 common frames omitted
+2019/01/28-13:45 [Druid-ConnectionPool-Create-1343459127] ERROR com.alibaba.druid.pool.DruidDataSource- create connection SQLException, url: jdbc:mysql://localhost:3306/miniplay, errorCode 0, state 08S01
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_171]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_171]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2197) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:778) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_171]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_171]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468) ~[druid-1.1.10.jar:1.1.10]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_171]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_171]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_171]
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	... 15 common frames omitted
+2019/01/28-13:45 [Druid-ConnectionPool-Create-1343459127] ERROR com.alibaba.druid.pool.DruidDataSource- create connection SQLException, url: jdbc:mysql://localhost:3306/miniplay, errorCode 0, state 08S01
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_171]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_171]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2197) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:778) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_171]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_171]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468) ~[druid-1.1.10.jar:1.1.10]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_171]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_171]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_171]
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	... 15 common frames omitted
+2019/01/28-13:45 [Druid-ConnectionPool-Create-1343459127] ERROR com.alibaba.druid.pool.DruidDataSource- create connection SQLException, url: jdbc:mysql://localhost:3306/miniplay, errorCode 0, state 08S01
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_171]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_171]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2197) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:778) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_171]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_171]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468) ~[druid-1.1.10.jar:1.1.10]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_171]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_171]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_171]
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	... 15 common frames omitted
+2019/01/28-13:45 [Druid-ConnectionPool-Create-1343459127] ERROR com.alibaba.druid.pool.DruidDataSource- create connection SQLException, url: jdbc:mysql://localhost:3306/miniplay, errorCode 0, state 08S01
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_171]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_171]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2197) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:778) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_171]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_171]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468) ~[druid-1.1.10.jar:1.1.10]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_171]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_171]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_171]
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	... 15 common frames omitted
+2019/01/28-13:45 [Druid-ConnectionPool-Create-1343459127] ERROR com.alibaba.druid.pool.DruidDataSource- create connection SQLException, url: jdbc:mysql://localhost:3306/miniplay, errorCode 0, state 08S01
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_171]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_171]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2197) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:778) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_171]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_171]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468) ~[druid-1.1.10.jar:1.1.10]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_171]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_171]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_171]
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	... 15 common frames omitted
+2019/01/28-13:45 [Druid-ConnectionPool-Create-1343459127] ERROR com.alibaba.druid.pool.DruidDataSource- create connection SQLException, url: jdbc:mysql://localhost:3306/miniplay, errorCode 0, state 08S01
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.GeneratedConstructorAccessor46.newInstance(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_171]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_171]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2197) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:778) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at sun.reflect.GeneratedConstructorAccessor43.newInstance(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_171]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_171]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468) ~[druid-1.1.10.jar:1.1.10]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_171]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_171]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_171]
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	... 14 common frames omitted
+2019/01/28-13:45 [Druid-ConnectionPool-Create-1343459127] ERROR com.alibaba.druid.pool.DruidDataSource- create connection SQLException, url: jdbc:mysql://localhost:3306/miniplay, errorCode 0, state 08S01
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.GeneratedConstructorAccessor46.newInstance(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_171]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_171]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2197) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:778) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at sun.reflect.GeneratedConstructorAccessor43.newInstance(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_171]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_171]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468) ~[druid-1.1.10.jar:1.1.10]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_171]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_171]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_171]
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	... 14 common frames omitted
+2019/01/28-13:45 [Druid-ConnectionPool-Create-1343459127] ERROR com.alibaba.druid.pool.DruidDataSource- create connection SQLException, url: jdbc:mysql://localhost:3306/miniplay, errorCode 0, state 08S01
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.GeneratedConstructorAccessor46.newInstance(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_171]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_171]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2197) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2230) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2025) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:778) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at sun.reflect.GeneratedConstructorAccessor43.newInstance(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_171]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_171]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468) ~[druid-1.1.10.jar:1.1.10]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_171]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_171]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_171]
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	... 14 common frames omitted
+2019/01/28-13:45 [restartedMain] INFO  com.miniplay.miniplay.MiniPlayEurekaCityApplication- The following profiles are active: dev
+2019/01/28-13:45 [restartedMain] INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext- Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4fde89bf: startup date [Mon Jan 28 13:45:46 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@256830
+2019/01/28-13:45 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Multiple Spring Data modules found, entering strict repository configuration mode!
+2019/01/28-13:45 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Multiple Spring Data modules found, entering strict repository configuration mode!
+2019/01/28-13:45 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport- Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.miniplay.miniplay.dao.ProvinceDao.
+2019/01/28-13:45 [restartedMain] INFO  org.springframework.cloud.context.scope.GenericScope- BeanFactory id=37755b14-8f43-38a4-af9a-98f9e5196029
+2019/01/28-13:45 [restartedMain] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor- JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019/01/28-13:45 [restartedMain] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$76221d5c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019/01/28-13:45 [restartedMain] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'redisConfiguration' of type [com.miniplay.miniplay.configuration.RedisConfiguration$$EnhancerBySpringCGLIB$$bda39101] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019/01/28-13:45 [restartedMain] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$923c2059] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019/01/28-13:45 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8081 (http)
+2019/01/28-13:46 [restartedMain] INFO  com.miniplay.miniplay.MiniPlayEurekaCityApplication- The following profiles are active: dev
+2019/01/28-13:46 [restartedMain] INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext- Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@36d7651c: startup date [Mon Jan 28 13:46:21 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@6553c603
+2019/01/28-13:46 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Multiple Spring Data modules found, entering strict repository configuration mode!
+2019/01/28-13:46 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Multiple Spring Data modules found, entering strict repository configuration mode!
+2019/01/28-13:46 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport- Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.miniplay.miniplay.dao.ProvinceDao.
+2019/01/28-13:46 [restartedMain] INFO  org.springframework.cloud.context.scope.GenericScope- BeanFactory id=37755b14-8f43-38a4-af9a-98f9e5196029
+2019/01/28-13:46 [restartedMain] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor- JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019/01/28-13:46 [restartedMain] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$94e055a2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019/01/28-13:46 [restartedMain] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'redisConfiguration' of type [com.miniplay.miniplay.configuration.RedisConfiguration$$EnhancerBySpringCGLIB$$dc61c947] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019/01/28-13:46 [restartedMain] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$b0fa589f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019/01/28-13:46 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8081 (http)
+2019/01/28-13:46 [restartedMain] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2019/01/28-13:46 [restartedMain] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.34
+2019/01/28-13:46 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener- The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/alan.chen/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019/01/28-13:46 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+2019/01/28-13:46 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 2514 ms
+2019/01/28-13:46 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean- Servlet statViewServlet mapped to [/druid/*]
+2019/01/28-13:46 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean- Servlet dispatcherServlet mapped to [/]
+2019/01/28-13:46 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'characterEncodingFilter' to: [/*]
+2019/01/28-13:46 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019/01/28-13:46 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019/01/28-13:46 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'requestContextFilter' to: [/*]
+2019/01/28-13:46 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'webStatFilter' to urls: [/*]
+2019/01/28-13:46 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource- {dataSource-1} inited
+2019/01/28-13:46 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean- Building JPA container EntityManagerFactory for persistence unit 'default'
+2019/01/28-13:46 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper- HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019/01/28-13:46 [restartedMain] INFO  org.hibernate.Version- HHH000412: Hibernate Core {5.2.17.Final}
+2019/01/28-13:46 [restartedMain] INFO  org.hibernate.cfg.Environment- HHH000206: hibernate.properties not found
+2019/01/28-13:46 [restartedMain] INFO  org.hibernate.annotations.common.Version- HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019/01/28-13:46 [restartedMain] INFO  org.hibernate.dialect.Dialect- HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2019/01/28-13:46 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean- Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019/01/28-13:46 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource- No URLs will be polled as dynamic configuration sources.
+2019/01/28-13:46 [restartedMain] INFO  com.netflix.config.sources.URLConfigurationSource- To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019/01/28-13:46 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource- No URLs will be polled as dynamic configuration sources.
+2019/01/28-13:46 [restartedMain] INFO  com.netflix.config.sources.URLConfigurationSource- To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019/01/28-13:46 [restartedMain] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019/01/28-13:46 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter- Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@36d7651c: startup date [Mon Jan 28 13:46:21 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@6553c603
+2019/01/28-13:46 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019/01/28-13:46 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/city/cities],methods=[GET]}" onto public java.util.List<com.miniplay.miniplay.vo.CityVo> com.miniplay.miniplay.controller.CityController.listCity()
+2019/01/28-13:46 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/province/list]}" onto public java.util.List<com.miniplay.miniplay.entity.Province> com.miniplay.miniplay.controller.ProvinceController.findList()
+2019/01/28-13:46 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/province/{id}]}" onto public com.miniplay.miniplay.entity.Province com.miniplay.miniplay.controller.ProvinceController.findProvinceById(java.lang.Integer)
+2019/01/28-13:46 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019/01/28-13:46 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019/01/28-13:46 [restartedMain] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019/01/28-13:46 [restartedMain] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019/01/28-13:46 [restartedMain] INFO  org.quartz.impl.StdSchedulerFactory- Using default implementation for ThreadExecutor
+2019/01/28-13:46 [restartedMain] INFO  org.quartz.core.SchedulerSignalerImpl- Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019/01/28-13:46 [restartedMain] INFO  org.quartz.core.QuartzScheduler- Quartz Scheduler v.2.3.0 created.
+2019/01/28-13:46 [restartedMain] INFO  org.quartz.simpl.RAMJobStore- RAMJobStore initialized.
+2019/01/28-13:46 [restartedMain] INFO  org.quartz.core.QuartzScheduler- Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019/01/28-13:46 [restartedMain] INFO  org.quartz.impl.StdSchedulerFactory- Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2019/01/28-13:46 [restartedMain] INFO  org.quartz.impl.StdSchedulerFactory- Quartz scheduler version: 2.3.0
+2019/01/28-13:46 [restartedMain] INFO  org.quartz.core.QuartzScheduler- JobFactory set to: org.springframework.boot.autoconfigure.quartz.AutowireCapableBeanJobFactory@58f43982
+2019/01/28-13:46 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer- LiveReload server is running on port 35729
+2019/01/28-13:46 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Registering beans for JMX exposure on startup
+2019/01/28-13:46 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Bean with name 'dataSource' has been autodetected for JMX exposure
+2019/01/28-13:46 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Bean with name 'refreshScope' has been autodetected for JMX exposure
+2019/01/28-13:46 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2019/01/28-13:46 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Bean with name 'environmentManager' has been autodetected for JMX exposure
+2019/01/28-13:46 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2019/01/28-13:46 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2019/01/28-13:46 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=36d7651c,type=ConfigurationPropertiesRebinder]
+2019/01/28-13:46 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019/01/28-13:46 [restartedMain] INFO  org.springframework.context.support.DefaultLifecycleProcessor- Starting beans in phase 0
+2019/01/28-13:46 [restartedMain] INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory- Setting initial instance status as: STARTING
+2019/01/28-13:46 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- Initializing Eureka in region us-east-1
+2019/01/28-13:46 [restartedMain] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider- Using JSON encoding codec LegacyJacksonJson
+2019/01/28-13:46 [restartedMain] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider- Using JSON decoding codec LegacyJacksonJson
+2019/01/28-13:46 [restartedMain] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider- Using XML encoding codec XStreamXml
+2019/01/28-13:46 [restartedMain] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider- Using XML decoding codec XStreamXml
+2019/01/28-13:46 [restartedMain] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver- Resolving eureka endpoints via configuration
+2019/01/28-13:46 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- Disable delta property : false
+2019/01/28-13:46 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- Single vip registry refresh property : null
+2019/01/28-13:46 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- Force full registry fetch : false
+2019/01/28-13:46 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- Application is null : false
+2019/01/28-13:46 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- Registered Applications size is zero : true
+2019/01/28-13:46 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- Application version is -1: true
+2019/01/28-13:46 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- Getting all instance registry info from the eureka server
+2019/01/28-13:46 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- The response status is 200
+2019/01/28-13:46 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- Starting heartbeat executor: renew interval is: 30
+2019/01/28-13:46 [restartedMain] INFO  com.netflix.discovery.InstanceInfoReplicator- InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019/01/28-13:46 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- Discovery Client initialized at timestamp 1548654388721 with initial instances count: 1
+2019/01/28-13:46 [restartedMain] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry- Registering application mini-play-city-eureka with eureka with status UP
+2019/01/28-13:46 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- Saw local status change event StatusChangeEvent [timestamp=1548654388729, current=UP, previous=STARTING]
+2019/01/28-13:46 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient- DiscoveryClient_MINI-PLAY-CITY-EUREKA/192.168.178.39:mini-play-city-eureka:8081: registering service...
+2019/01/28-13:46 [restartedMain] INFO  org.springframework.context.support.DefaultLifecycleProcessor- Starting beans in phase 2147483647
+2019/01/28-13:46 [restartedMain] INFO  org.springframework.scheduling.quartz.SchedulerFactoryBean- Starting Quartz Scheduler now
+2019/01/28-13:46 [restartedMain] INFO  org.quartz.core.QuartzScheduler- Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2019/01/28-13:46 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient- DiscoveryClient_MINI-PLAY-CITY-EUREKA/192.168.178.39:mini-play-city-eureka:8081 - registration status: 204
+2019/01/28-13:46 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8081 (http) with context path ''
+2019/01/28-13:46 [restartedMain] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration- Updating port to 8081
+2019/01/28-13:46 [restartedMain] INFO  com.miniplay.miniplay.MiniPlayEurekaCityApplication- Started MiniPlayEurekaCityApplication in 9.194 seconds (JVM running for 10.188)
+2019/01/28-13:46 [http-nio-8081-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019/01/28-13:46 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- FrameworkServlet 'dispatcherServlet': initialization started
+2019/01/28-13:46 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- FrameworkServlet 'dispatcherServlet': initialization completed in 36 ms
+2019/01/28-13:46 [http-nio-8081-exec-1] INFO  io.lettuce.core.EpollProvider- Starting without optional epoll library
+2019/01/28-13:46 [http-nio-8081-exec-1] INFO  io.lettuce.core.KqueueProvider- Starting without optional kqueue library
+2019/01/28-13:49 [Thread-31] INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext- Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@36d7651c: startup date [Mon Jan 28 13:46:21 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@6553c603
+2019/01/28-13:49 [Thread-31] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry- Unregistering application mini-play-city-eureka with eureka with status DOWN
+2019/01/28-13:49 [Thread-31] WARN  com.netflix.discovery.DiscoveryClient- Saw local status change event StatusChangeEvent [timestamp=1548654542264, current=DOWN, previous=UP]
+2019/01/28-13:49 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient- DiscoveryClient_MINI-PLAY-CITY-EUREKA/192.168.178.39:mini-play-city-eureka:8081: registering service...
+2019/01/28-13:49 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.apache.http.impl.client.DefaultHttpClient- I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:8761: Broken pipe (Write failed)
+2019/01/28-13:49 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.apache.http.impl.client.DefaultHttpClient- Retrying request to {}->http://localhost:8761
+2019/01/28-13:49 [Thread-31] INFO  org.springframework.context.support.DefaultLifecycleProcessor- Stopping beans in phase 2147483647
+2019/01/28-13:49 [Thread-31] INFO  org.quartz.core.QuartzScheduler- Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019/01/28-13:49 [Thread-31] INFO  org.springframework.context.support.DefaultLifecycleProcessor- Stopping beans in phase 0
+2019/01/28-13:49 [Thread-31] INFO  org.springframework.scheduling.quartz.SchedulerFactoryBean- Shutting down Quartz Scheduler
+2019/01/28-13:49 [Thread-31] INFO  org.quartz.core.QuartzScheduler- Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2019/01/28-13:49 [Thread-31] INFO  org.quartz.core.QuartzScheduler- Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2019/01/28-13:49 [Thread-31] INFO  org.quartz.core.QuartzScheduler- Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2019/01/28-13:49 [Thread-31] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Unregistering JMX-exposed beans on shutdown
+2019/01/28-13:49 [Thread-31] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Unregistering JMX-exposed beans
+2019/01/28-13:49 [DiscoveryClient-InstanceInfoReplicator-0] ERROR com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient- Request execution error
+com.sun.jersey.api.client.ClientHandlerException: org.apache.http.client.ClientProtocolException
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.post(WebResource.java:570) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.register(AbstractJerseyEurekaHttpClient.java:56) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:829) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) [eureka-client-1.9.3.jar:1.9.3]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_171]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_171]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_171]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_171]
+Caused by: org.apache.http.client.ClientProtocolException: null
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:839) ~[httpclient-4.5.3.jar:4.5.3]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.3.jar:4.5.3]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.3.jar:4.5.3]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	... 29 common frames omitted
+Caused by: org.apache.http.client.NonRepeatableRequestException: Cannot retry request with a non-repeatable request entity.  The cause lists the reason the original request failed.
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:658) ~[httpclient-4.5.3.jar:4.5.3]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:486) ~[httpclient-4.5.3.jar:4.5.3]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.3.jar:4.5.3]
+	... 32 common frames omitted
+Caused by: java.net.SocketException: Broken pipe (Write failed)
+	at java.net.SocketOutputStream.socketWrite0(Native Method) ~[na:1.8.0_171]
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111) ~[na:1.8.0_171]
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:155) ~[na:1.8.0_171]
+	at org.apache.http.impl.io.AbstractSessionOutputBuffer.flushBuffer(AbstractSessionOutputBuffer.java:160) ~[httpcore-4.4.10.jar:4.4.10]
+	at org.apache.http.impl.io.AbstractSessionOutputBuffer.flush(AbstractSessionOutputBuffer.java:168) ~[httpcore-4.4.10.jar:4.4.10]
+	at org.apache.http.impl.io.ChunkedOutputStream.close(ChunkedOutputStream.java:203) ~[httpcore-4.4.10.jar:4.4.10]
+	at com.fasterxml.jackson.core.json.UTF8JsonGenerator.close(UTF8JsonGenerator.java:1138) ~[jackson-core-2.9.6.jar:2.9.6]
+	at com.fasterxml.jackson.databind.ObjectWriter._configAndWriteValue(ObjectWriter.java:1125) ~[jackson-databind-2.9.6.jar:2.9.6]
+	at com.fasterxml.jackson.databind.ObjectWriter.writeValue(ObjectWriter.java:950) ~[jackson-databind-2.9.6.jar:2.9.6]
+	at com.netflix.discovery.converters.EurekaJacksonCodec.writeTo(EurekaJacksonCodec.java:221) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.converters.wrappers.CodecWrappers$LegacyJacksonJson.encode(CodecWrappers.java:304) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.provider.DiscoveryJerseyProvider.writeTo(DiscoveryJerseyProvider.java:135) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.sun.jersey.api.client.RequestWriter$RequestEntityWriterImpl.writeRequestEntity(RequestWriter.java:231) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler$2.writeTo(ApacheHttpClient4Handler.java:289) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	at org.apache.http.entity.HttpEntityWrapper.writeTo(HttpEntityWrapper.java:94) ~[httpcore-4.4.10.jar:4.4.10]
+	at org.apache.http.impl.client.EntityEnclosingRequestWrapper$EntityWrapper.writeTo(EntityEnclosingRequestWrapper.java:110) ~[httpclient-4.5.3.jar:4.5.3]
+	at org.apache.http.impl.entity.EntitySerializer.serialize(EntitySerializer.java:118) ~[httpcore-4.4.10.jar:4.4.10]
+	at org.apache.http.impl.AbstractHttpClientConnection.sendRequestEntity(AbstractHttpClientConnection.java:266) ~[httpcore-4.4.10.jar:4.4.10]
+	at org.apache.http.impl.conn.AbstractClientConnAdapter.sendRequestEntity(AbstractClientConnAdapter.java:239) ~[httpclient-4.5.3.jar:4.5.3]
+	at org.apache.http.protocol.HttpRequestExecutor.doSendRequest(HttpRequestExecutor.java:238) ~[httpcore-4.4.10.jar:4.4.10]
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:123) ~[httpcore-4.4.10.jar:4.4.10]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:684) ~[httpclient-4.5.3.jar:4.5.3]
+	... 34 common frames omitted
+2019/01/28-13:49 [DiscoveryClient-InstanceInfoReplicator-0] WARN  com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient- Request execution failed with message: org.apache.http.client.ClientProtocolException
+2019/01/28-13:49 [DiscoveryClient-InstanceInfoReplicator-0] ERROR com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient- Request execution error
+com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.sun.jersey.api.client.WebResource$Builder.post(WebResource.java:570) ~[jersey-client-1.19.1.jar:1.19.1]
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.register(AbstractJerseyEurekaHttpClient.java:56) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:829) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) [eureka-client-1.9.3.jar:1.9.3]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_171]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_171]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_171]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_171]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_171]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_171]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_171]
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.3.jar:4.5.3]
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.3.jar:4.5.3]
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.3.jar:4.5.3]
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.3.jar:4.5.3]
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610) ~[httpclient-4.5.3.jar:4.5.3]
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445) ~[httpclient-4.5.3.jar:4.5.3]
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.3.jar:4.5.3]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.3.jar:4.5.3]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.3.jar:4.5.3]
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
+	... 30 common frames omitted
+2019/01/28-13:49 [DiscoveryClient-InstanceInfoReplicator-0] WARN  com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient- Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
+2019/01/28-13:49 [DiscoveryClient-InstanceInfoReplicator-0] WARN  com.netflix.discovery.DiscoveryClient- DiscoveryClient_MINI-PLAY-CITY-EUREKA/192.168.178.39:mini-play-city-eureka:8081 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:829) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121) [eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) [eureka-client-1.9.3.jar:1.9.3]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_171]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_171]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_171]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_171]
+2019/01/28-13:49 [DiscoveryClient-InstanceInfoReplicator-0] WARN  com.netflix.discovery.InstanceInfoReplicator- There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:829) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121) ~[eureka-client-1.9.3.jar:1.9.3]
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) [eureka-client-1.9.3.jar:1.9.3]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_171]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_171]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_171]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_171]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_171]
+2019/01/28-13:49 [Thread-31] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean- Closing JPA EntityManagerFactory for persistence unit 'default'
+2019/01/28-13:49 [Thread-31] INFO  com.alibaba.druid.pool.DruidDataSource- {dataSource-1} closed
+2019/01/28-13:49 [Thread-31] INFO  com.netflix.discovery.DiscoveryClient- Shutting down DiscoveryClient ...
+2019/01/28-13:49 [Thread-31] WARN  org.springframework.context.annotation.CommonAnnotationBeanPostProcessor- Invocation of destroy method failed on bean with name 'scopedTarget.eurekaClient': org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaInstanceConfigBean': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)

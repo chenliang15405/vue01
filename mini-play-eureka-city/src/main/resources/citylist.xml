@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<China>
+
+            <county id="010101" name="北京" weatherCode="101010100" province = "北京"/>
+            <county id="010102" name="海淀" weatherCode="101010200" province = "北京"/>
+            <county id="010103" name="朝阳" weatherCode="101010300" province = "北京"/>
+            <county id="010104" name="顺义" weatherCode="101010400" province = "北京"/>
+            <county id="010105" name="怀柔" weatherCode="101010500" province = "北京"/>
+            <county id="010106" name="通州" weatherCode="101010600" province = "北京"/>
+            <county id="010107" name="昌平" weatherCode="101010700" province = "北京"/>
+            <county id="010108" name="延庆" weatherCode="101010800" province = "北京"/>
+            <county id="010109" name="丰台" weatherCode="101010900" province = "北京"/>
+            <county id="010110" name="石景山" weatherCode="101011000" province = "北京"/>
+            <county id="010111" name="大兴" weatherCode="101011100" province = "北京"/>
+            <county id="010112" name="房山" weatherCode="101011200" province = "北京"/>
+            <county id="010113" name="密云" weatherCode="101011300" province = "北京"/>
+            <county id="010114" name="门头沟" weatherCode="101011400" province = "北京"/>
+            <county id="010115" name="平谷" weatherCode="101011500" province = "北京"/>
+            <county id="020101" name="上海" weatherCode="101020100" province="上海"/>
+            <county id="020102" name="闵行" weatherCode="101020200" province="上海"/>
+            <county id="020103" name="宝山" weatherCode="101020300" province="上海"/>
+            <county id="020104" name="嘉定" weatherCode="101020500" province="上海"/>
+            <county id="020105" name="浦东南汇" weatherCode="101020600" province="上海"/>
+            <county id="020106" name="金山" weatherCode="101020700" province="上海"/>
+            <county id="020107" name="青浦" weatherCode="101020800" province="上海"/>
+            <county id="020108" name="松江" weatherCode="101020900" province="上海"/>
+            <county id="020109" name="奉贤" weatherCode="101021000" province="上海"/>
+            <county id="020110" name="崇明" weatherCode="101021100" province="上海"/>
+            <county id="020111" name="徐家汇" weatherCode="101021200" province="上海"/>
+            <county id="020112" name="浦东" weatherCode="101021300" province="上海"/>
+
+            <county id="110101" name="西安" weatherCode="101110101" province="陕西"/>
+            <county id="110102" name="长安" weatherCode="101110102" province="陕西"/>
+            <county id="110103" name="临潼" weatherCode="101110103" province="陕西"/>
+            <county id="110104" name="蓝田" weatherCode="101110104" province="陕西"/>
+            <county id="110105" name="周至" weatherCode="101110105" province="陕西"/>
+            <county id="110106" name="户县" weatherCode="101110106" province="陕西"/>
+            <county id="110107" name="高陵" weatherCode="101110107" province="陕西"/>
+            <county id="110201" name="咸阳" weatherCode="101110200" province="陕西"/>
+            <county id="110202" name="三原" weatherCode="101110201" province="陕西"/>
+            <county id="110203" name="礼泉" weatherCode="101110202" province="陕西"/>
+            <county id="110204" name="永寿" weatherCode="101110203" province="陕西"/>
+            <county id="110205" name="淳化" weatherCode="101110204" province="陕西"/>
+            <county id="110206" name="泾阳" weatherCode="101110205" province="陕西"/>
+            <county id="110207" name="武功" weatherCode="101110206" province="陕西"/>
+            <county id="110208" name="乾县" weatherCode="101110207" province="陕西"/>
+            <county id="110209" name="彬县" weatherCode="101110208" province="陕西"/>
+            <county id="110210" name="长武" weatherCode="101110209" province="陕西"/>
+            <county id="110211" name="旬邑" weatherCode="101110210" province="陕西"/>
+            <county id="110212" name="兴平" weatherCode="101110211" province="陕西"/>
+
+</China>
+
